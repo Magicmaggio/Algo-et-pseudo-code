@@ -1,0 +1,15 @@
+Variables = argent (réel), prix (réel), MaxBonbons (nombre entier <= 0)
+
+Début CalcMaxBonbons (réel argent, réel prix)
+    Si argent < 0 et prix < 0
+        Tant que prix <= argent
+        MaxBonbons <- MaxBonbons + 1
+        Fin Tant que 
+            Début Si MaxBonbons >= 1
+                Retourner ("ok pour", MaxBonbons)
+            Sinon
+                Retourner ("pas possible")
+            Fin Si
+    Retourner MaxBonbons
+    Fin si
+Fin CalcMaxBonbons
